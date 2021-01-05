@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="gmail">
+
+	<listeners>
+		<listener class-name="com.gmail.utilities.Reporting" />
+	</listeners>
+
+
+	<test name="Compose Gmail Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.gmail.testCases.ComposerFrameDisplay" />
+			 <class name="com.gmail.testCases.DisplaySuggestion" />
+			<class name="com.gmail.testCases.DraftFunctionality" />
+			<class name="com.gmail.testCases.MaxSizeAttachementErrorScenarios" />
+		</classes>
+
+	</test>
+
+</suite>
